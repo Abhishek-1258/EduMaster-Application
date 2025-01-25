@@ -50,8 +50,6 @@ public class courseController {
 	@GetMapping("/instructor")
 	@ResponseStatus(HttpStatus.OK)
 	public Course getCourseByInstructor(@RequestParam("instructor") String instructor) {
-		System.out.println("Hitted");
-		System.out.println(instructor);
 		return courseService.getCourseByInstructor(instructor);
 	}
 
